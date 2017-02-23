@@ -2,3 +2,16 @@ body,h1,h2,h3,h4,h5,h6,p,span,a {
     font-family: "Microsoft Jhenghei", sans-serif !important;
     /*font-family: 'Noto Sans TC', sans-serif;*/
 }
+@media only screen and (max-width: 1023px) {
+  .cd-timeline-content h2 {
+    font-size: 2rem;
+  }
+  .cd-timeline-content p {
+    font-size: 2rem;
+    margin: 1px;
+  }
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 0.875rem;
+  }
+}

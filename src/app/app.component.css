@@ -1,0 +1,74 @@
+/*@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);*/
+body,h1,h2,h3,h4,h5,h6,p,span,a {
+    font-family: "Microsoft Jhenghei", sans-serif !important;
+    /*font-family: 'Noto Sans TC', sans-serif;*/
+}
+
+.parallax {
+    /* The image used */
+    /*background-image: url("../img/19.jpg");*/
+    /* Set a specific height */
+    /*min-height: 400px;*/
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    font-size: 3em;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+span {
+    font-size: 3em;
+    /*font-family: 'Noto Sans TC', sans-serif !important;*/
+}
+.label{
+    font-size: 1.2em !important;
+    margin-top: 10px ;
+    margin-bottom: 5px ;
+}
+li {
+    font-size: 1.5em !important;
+}

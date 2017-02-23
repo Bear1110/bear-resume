@@ -1,3 +1,79 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container" style="padding-top: 4%">
+  <div class="jumbotron">
+    <div class="row" style="padding: 1%">
+      <div class="text-center col-md-12">
+        <span>I'm </span><span class="text-change" style=" display: inline;"></span>
+      </div>
+    </div>
+    <div class="row" style="padding: 1%">
+      <div class="col-md-4 text-center">
+        <img src="assets/img/profile.png" class="img-responsiv" width="318" height="323" style="box-shadow: 10px 10px 5px #888888;">
+      </div>
+      <div class="col-md-8">
+        <h1>熊偉年</h1>
+        <h2><b>前後端網頁工程師</b></h2>
+        <h2><b>中央大學資訊工程學系 (Junior)</b></h2>
+        <h2>樂於學習各種技術</h2>
+        <div class="row">
+          <span *ngFor="let item of skill" class="label label-success">{{item}}</span>
+        </div>
+      </div>
+
+    </div>
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;margin-top: 20px;">
+      <li><a href="#home" data-toggle="tab">自我簡介</a></li>
+      <li><a href="#profile" data-toggle="tab">經歷</a></li>
+      <li><a href="#project" data-toggle="tab">專案</a></li>
+      <li><a target="_blank" href="https://github.com/Bear1110"><i class="fa fa-github fa-lg" aria-hidden="true"></i>Github</a></li>
+      <li><a target="_blank" href="https://tw.linkedin.com/in/偉年-熊-427162132"><i class="fa fa-linkedin-square" aria-hidden="true"></i>Linkedin</a></li>
+
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane fade active in" id="home">
+        <p>因為目前還是學生，希望能夠有實習的機會!</p>
+        <p>有網頁開發的經歷 使用過 Laravel 框架 ，並且有使用過 API 及 引入套件的經歷 (Google Map API..) 及 實作 RWD</p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>-前端使用過</p>
+            <ul>
+              <li>jQury</li>
+              <li>vue.js</li>
+              <li>JavaScript</li>
+              <li>Angular 2</li>
+              <li>CSS</li>
+              <li>導入過一些API ( Google Map API...)</li>
+              <li>RWD 設計</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+
+            <p>-後端使用過</p>
+            <ul>
+              <li>PHP</li>
+              <li>SQL</li>
+              <li>Laravel</li>
+            </ul>
+          </div>
+        </div>
+
+        <p>並使用過 Java 撰寫程式 並寫過 Android APP , Tcp/Udp Game...</p>
+        <p>有參加過使用Git 開發的團隊經驗</p>
+      </div>
+      <!--*********************************************************************************-->
+      <div class="tab-pane fade" id="profile">
+        <app-exp></app-exp>
+      </div>
+      <!--*********************************************************************************-->
+      <div class="tab-pane fade" id="project">
+        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit,
+          blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo
+          booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud
+          organic, assumenda labore aesthetic magna delectus mollit.</p>
+      </div>
+    </div>
+    <div class="progress progress-striped active">
+      <div class="progress-bar" style="width: 100%"></div>
+    </div>
+  </div>
+</div>
+<router-outlet></router-outlet>

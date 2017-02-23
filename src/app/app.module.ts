@@ -4,15 +4,25 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { AlertModule } from 'ng2-bootstrap';
+import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
+
+import { RouterModule, Routes } from '@angular/router';
+import { ExpComponent } from './exp/exp.component';
+const ROUTES: Routes = [];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ExpComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AlertModule.forRoot(),
+    RouterModule.forRoot(ROUTES),
+    Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
   providers: [],
   bootstrap: [AppComponent]

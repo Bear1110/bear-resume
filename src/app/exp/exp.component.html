@@ -1,0 +1,21 @@
+
+  <div class="list-group" id="accordion">
+    <div class="list-group-item" *ngFor="let item of skill; let i = index">
+      <div class="row-action-primary">
+        <i class="material-icons">folder</i>
+      </div>
+      <a data-toggle="collapse" [href]="'#collapse'+i">
+        <div class="row-content">
+          <div class="least-content">15m</div>
+          <h4 class="list-group-item-heading">{{item}}</h4>
+
+          <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+        </div>
+      </a>
+      <div [id]="'collapse'+i" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="list-group-separator"></div>
+  </div>

@@ -1,0 +1,1 @@
+declare var $;// declare var $.backstretch;

@@ -14,7 +14,7 @@ export class ExpComponent implements OnInit {
       icon : 'fa fa-chrome fa-3x'
     },{
       title :"inQ 好奇人工智慧公司(寒假實習生)",
-      content : ["使用 Angular 2 開發前端網頁","<a href='http://inq.ai'>inQ公司官網</a>"],
+      content : ["使用 Angular 2 開發前端網頁","<a target='_blank' href='https://bear1110.github.io/demo-website/'>inQ公司官網</a>"],
       time : '2017/1~2017/2',
       icon : 'fa fa-briefcase fa-3x'
     },{

@@ -1,6 +1,15 @@
-import { Component ,OnInit, AfterViewInit} from '@angular/core';
-import { Angulartics2GoogleAnalytics } from 'angulartics2';
+import {
+  Component,
+  OnInit,
+  AfterViewInit
+} from '@angular/core';
 
+import {
+  Angulartics2GoogleAnalytics
+} from 'angulartics2';
+import {
+  Observable
+} from 'rxjs/Rx';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,22 +17,30 @@ import { Angulartics2GoogleAnalytics } from 'angulartics2';
 })
 export class AppComponent {
   constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
-  skill = ['jQury','vue.js','Angular2','PHP','Laravel','Java','Android','CSS']
+  skill = ['jQury', 'vue.js', 'Angular2', 'PHP', 'Laravel', 'Java', 'Android', 'CSS']
+  background = ['assets/img/12.jpg', 'assets/img/19.jpg', 'assets/img/1.jpg']
+  now = "url('assets/img/12.jpg')";
+  length = 0;
+
+  ngOnInit() {
+    let timer = Observable.timer(0, 4000);
+    timer.subscribe(t => {
+      this.changeBackground();
+    });
+  }
   ngAfterViewInit() {
-       $(".text-change").typed({
-            strings: ["web engineer.", "aggressive student.", "Bear."],
-            typeSpeed: 100, // typing speed
-            backDelay: 700, // pause before backspacing
-            loop: !0, // here
+    $(".text-change").typed({
+      strings: ["web engineer.", "aggressive student.", "Bear."],
+      typeSpeed: 100, // typing speed
+      backDelay: 700, // pause before backspacing
+      loop: !0, // here
 
     });
-    $.backstretch([
-        "assets/img/12.jpg",
-        "assets/img/19.jpg",
-        "assets/img/1.jpg"
-    ], {
-        fade: 750,
-        duration: 4000
-    });
-    }
+    this.changeBackground();
+  }
+  changeBackground() {
+      this.now = "url('" + this.background[this.length] + "')";
+      (this.background[++this.length]==null)? this.length = 0 : "";
+  }
+
 }

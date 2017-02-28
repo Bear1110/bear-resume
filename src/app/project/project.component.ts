@@ -11,7 +11,7 @@ export class ProjectComponent implements OnInit {
     {
       title :"inQ官方網站",
       subTitle : "Angular 2 寫成",
-      content : "<p><a target='_blank' href='http://inq.ai'>官方網站Link</p>",
+      content : "<p><a target='_blank' href='https://bear1110.github.io/demo-website/'>官方網站Link</p>",
       time : '2015~現在',
       icon : 'fa fa-globe fa-5x'
     },{

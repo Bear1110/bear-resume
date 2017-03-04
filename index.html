@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Bear-Resume</title>
-  <base href="/bear-resume/">
+  <base href="/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -19,8 +19,99 @@
   <link rel="stylesheet" type="text/css" href="assets/css/ripples.min.css">
   <script src="assets/js/material.min.js"></script>
   <script src="assets/js/ripples.min.js"></script>
+  <style>
+    body {
+      background-color: #d35400;
+    }
+    
+    .sk-cube-grid {
+      width: 40px;
+      height: 40px;
+      margin: 45vh auto;
+    }
+    
+    .sk-cube-grid .sk-cube {
+      width: 33%;
+      height: 33%;
+      background-color: #333;
+      float: left;
+      -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+      animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+    }
+    
+    .sk-cube-grid .sk-cube1 {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+    
+    .sk-cube-grid .sk-cube2 {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+    
+    .sk-cube-grid .sk-cube3 {
+      -webkit-animation-delay: 0.4s;
+      animation-delay: 0.4s;
+    }
+    
+    .sk-cube-grid .sk-cube4 {
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s;
+    }
+    
+    .sk-cube-grid .sk-cube5 {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+    
+    .sk-cube-grid .sk-cube6 {
+      -webkit-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+    }
+    
+    .sk-cube-grid .sk-cube7 {
+      -webkit-animation-delay: 0s;
+      animation-delay: 0s;
+    }
+    
+    .sk-cube-grid .sk-cube8 {
+      -webkit-animation-delay: 0.1s;
+      animation-delay: 0.1s;
+    }
+    
+    .sk-cube-grid .sk-cube9 {
+      -webkit-animation-delay: 0.2s;
+      animation-delay: 0.2s;
+    }
+    
+    @-webkit-keyframes sk-cubeGridScaleDelay {
+      0%,
+      70%,
+      100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+      }
+      35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+      }
+    }
+    
+    @keyframes sk-cubeGridScaleDelay {
+      0%,
+      70%,
+      100% {
+        -webkit-transform: scale3D(1, 1, 1);
+        transform: scale3D(1, 1, 1);
+      }
+      35% {
+        -webkit-transform: scale3D(0, 0, 1);
+        transform: scale3D(0, 0, 1);
+      }
+    }
 
-<link href="styles.5ff631a23e08ea74789a.bundle.css" rel="stylesheet"></head>
+  </style>
+<link href="styles.b39c40e686da671d2133.bundle.css" rel="stylesheet"/></head>
 
 <body>
   <script>
@@ -39,7 +130,19 @@
     ga('create', 'UA-91938741-2', 'none');
 
   </script>
-  <app-root>Loading...!</app-root>
-<script type="text/javascript" src="inline.5d49b5f91a1c6b239084.bundle.js"></script><script type="text/javascript" src="main.4641a06a23906a53f66b.bundle.js"></script></body>
+  <app-root>
+    <div class="sk-cube-grid">
+      <div class="sk-cube sk-cube1"></div>
+      <div class="sk-cube sk-cube2"></div>
+      <div class="sk-cube sk-cube3"></div>
+      <div class="sk-cube sk-cube4"></div>
+      <div class="sk-cube sk-cube5"></div>
+      <div class="sk-cube sk-cube6"></div>
+      <div class="sk-cube sk-cube7"></div>
+      <div class="sk-cube sk-cube8"></div>
+      <div class="sk-cube sk-cube9"></div>
+    </div>
+  </app-root>
+<script type="text/javascript" src="inline.b4e86d7cc95691ef2d44.bundle.js"></script><script type="text/javascript" src="vendor.8be2711f98cd0e646c31.bundle.js"></script><script type="text/javascript" src="main.7df8936b100cb575b210.bundle.js"></script></body>
 
 </html>

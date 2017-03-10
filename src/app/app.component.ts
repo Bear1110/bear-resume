@@ -21,6 +21,7 @@ export class AppComponent {
   background = ['assets/img/12.jpg', 'assets/img/19.jpg', 'assets/img/1.jpg']
   now = "url('assets/img/12.jpg')";
   length = 0;
+  flex : boolean [] = [true,false,false,false,false];
 
   ngOnInit() {
     let timer = Observable.timer(0, 4000);
@@ -34,9 +35,15 @@ export class AppComponent {
       typeSpeed: 100, // typing speed
       backDelay: 700, // pause before backspacing
       loop: !0, // here
-
     });
     this.changeBackground();
+  }
+  navbarClick(i){
+    this.flex.forEach((item, index, theArray) => {
+      theArray[index] = false;
+    });
+    this.flex[i] = true;
+    console.log(this.flex);
   }
   changeBackground() {
       this.now = "url('" + this.background[this.length] + "')";

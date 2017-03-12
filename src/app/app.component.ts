@@ -22,6 +22,7 @@ export class AppComponent {
   now = "url('assets/img/12.jpg')";
   length = 0;
   flex : boolean [] = [true,false,false,false,false];
+  lastOneClick = 0;
 
   ngOnInit() {
     let timer = Observable.timer(0, 4000);
@@ -39,11 +40,12 @@ export class AppComponent {
     this.changeBackground();
   }
   navbarClick(i){
-    this.flex.forEach((item, index, theArray) => {
-      theArray[index] = false;
-    });
+    // this.flex.forEach((item, index, theArray) => {
+    //   theArray[index] = false;
+    // });
+    this.flex[this.lastOneClick] = false;
     this.flex[i] = true;
-    console.log(this.flex);
+    this.lastOneClick = i;
   }
   changeBackground() {
       this.now = "url('" + this.background[this.length] + "')";

@@ -1,0 +1,17 @@
+.attractive{
+    color : #009688;
+}
+b{
+    color: red;
+}
+li {
+  font-size: 1.5em;
+}
+.well{
+    height: 305px;
+}
+@media only screen and (max-width: 500px) {
+  .well {
+    height: auto;
+  }
+}

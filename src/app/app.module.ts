@@ -10,13 +10,15 @@ import { Angulartics2Module, Angulartics2GoogleAnalytics } from 'angulartics2';
 import { RouterModule, Routes } from '@angular/router';
 import { ExpComponent } from './exp/exp.component';
 import { ProjectComponent } from './project/project.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 const ROUTES: Routes = [];
 
 @NgModule({
   declarations: [
     AppComponent,
     ExpComponent,
-    ProjectComponent
+    ProjectComponent,
+    IntroductionComponent
   ],
   imports: [
     BrowserModule,

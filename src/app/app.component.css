@@ -62,17 +62,15 @@
     opacity: 1;
   }
 }
-span {
+.topFont span {
   font-size: 1.5em;
-  /*font-family: 'Noto Sans TC', sans-serif !important;*/
 }
-
 li {
   font-size: 1.5em !important;
 }
 
 @media only screen and (min-width: 1170px) {
-  span {
+  .topFont span {
     font-size: 3em;
   }
 }

@@ -2,7 +2,7 @@
   <div class="container" style="padding-top: 4%">
     <div class="jumbotron">
       <div class="row" style="padding: 1%">
-        <div class="text-center col-md-12">
+        <div class="text-center col-md-12 topFont">
           <span>I'm </span><span class="text-change" style=" display: inline;"></span>
         </div>
       </div>
@@ -18,16 +18,14 @@
           <ul class="breadcrumb">
             <li *ngFor="let item of skill">{{item}}</li>
           </ul>
-
         </div>
-
       </div>
       <ul class="nav nav-tabs" style="margin-bottom: 15px;margin-top: 20px; display: flex;">
-        <li class="title" (click)="navbarClick(0)" [ngClass]="{'open': flex[0]}"><a href="#home" data-toggle="tab"><i class="fa fa-user" aria-hidden="true"></i> 簡介</a></li>
-        <li class="title" (click)="navbarClick(1)" [ngClass]="{'open': flex[1]}"><a href="#profile" data-toggle="tab"><i class="fa fa-etsy" aria-hidden="true"></i> 經歷</a></li>
-        <li class="title" (click)="navbarClick(2)" [ngClass]="{'open': flex[2]}"><a href="#project" data-toggle="tab"><i class="fa fa-product-hunt" aria-hidden="true"></i> 專案</a></li>
-        <li class="title" (click)="navbarClick(3)" [ngClass]="{'open': flex[3]}"><a href="#mail" data-toggle="tab"><i class="fa fa-envelope-o" aria-hidden="true"></i> 聯絡我</a></li>
-        <li class="title" (click)="navbarClick(4)" [ngClass]="{'open': flex[4]}"><a target="_blank" href="https://github.com/Bear1110"><i class="fa fa-github fa-lg" aria-hidden="true"></i> Github</a></li>
+        <li class="title" (click)="navbarClick(0)" [ngClass]="{'open': flex[0]}"><a class="effect-6" href="#home" data-toggle="tab"><span><i class="fa fa-user" aria-hidden="true"></i> 簡介</span></a></li>
+        <li class="title" (click)="navbarClick(1)" [ngClass]="{'open': flex[1]}"><a href="#profile" data-toggle="tab"><span><i class="fa fa-etsy" aria-hidden="true"></i> 經歷</span></a></li>
+        <li class="title" (click)="navbarClick(2)" [ngClass]="{'open': flex[2]}"><a href="#project" data-toggle="tab"><span><i class="fa fa-product-hunt" aria-hidden="true"></i> 專案</span></a></li>
+        <li class="title" (click)="navbarClick(3)" [ngClass]="{'open': flex[3]}"><a href="#mail" data-toggle="tab"><span><i class="fa fa-envelope-o" aria-hidden="true"></i> 聯絡我</span></a></li>
+        <li class="title" (click)="navbarClick(4)" [ngClass]="{'open': flex[4]}"><a target="_blank" href="https://github.com/Bear1110"><span><i class="fa fa-github fa-2x" aria-hidden="true"></i></span></a></li>
       </ul>
       <div id="myTabContent" class="tab-content">
         <div class="tab-pane fade active in" id="home">

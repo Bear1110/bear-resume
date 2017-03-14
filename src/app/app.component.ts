@@ -13,12 +13,12 @@ import {
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css','./navbar-cool.css']
 })
 export class AppComponent {
   constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
-  skill = ['jQury', 'vue.js', 'Angular2', 'PHP', 'Laravel', 'Java', 'Android', 'CSS']
-  background = ['assets/img/12.jpg', 'assets/img/19.jpg', 'assets/img/1.jpg']
+  skill = ['jQury', 'vue.js', 'Angular2', 'PHP', 'Laravel', 'Java', 'Android', 'CSS'];
+  background = ['assets/img/12.jpg', 'assets/img/19.jpg', 'assets/img/1.jpg'];
   now = "url('assets/img/12.jpg')";
   length = 0;
   flex : boolean [] = [true,false,false,false,false];

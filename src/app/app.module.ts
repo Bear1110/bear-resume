@@ -11,6 +11,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ExpComponent } from './exp/exp.component';
 import { ProjectComponent } from './project/project.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+
+import { MockService }  from './mock.service';
 const ROUTES: Routes = [];
 
 @NgModule({
@@ -28,7 +30,9 @@ const ROUTES: Routes = [];
     RouterModule.forRoot(ROUTES),
     Angulartics2Module.forRoot([ Angulartics2GoogleAnalytics ])
   ],
-  providers: [],
+  providers: [
+    MockService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

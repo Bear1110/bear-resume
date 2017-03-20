@@ -21,19 +21,19 @@
         </div>
       </div>
       <ul class="nav nav-tabs" style="margin-bottom: 15px;margin-top: 20px; display: flex;">
-        <li class="title" (click)="navbarClick(0)" [ngClass]="{'open': flex[0]}">
+        <li class="title" (click)="thisNavbar='bio'" [ngClass]="{'open': thisNavbar==='bio'}">
           <a class="effect-6" href="#home" data-toggle="tab"><span><i class="fa fa-user" aria-hidden="true"></i> 簡介</span></a>
         </li>
-        <li class="title" (click)="navbarClick(1)" [ngClass]="{'open': flex[1]}">
+        <li class="title" (click)="thisNavbar='exp'" [ngClass]="{'open': thisNavbar ==='exp'}">
           <a href="#profile" data-toggle="tab"><span><i class="fa fa-etsy" aria-hidden="true"></i> 經歷</span></a>
         </li>
-        <li class="title" (click)="navbarClick(2)" [ngClass]="{'open': flex[2]}">
+        <li class="title" (click)="thisNavbar='pro'" [ngClass]="{'open': thisNavbar ==='pro'}">
           <a href="#project" data-toggle="tab"><span><i class="fa fa-product-hunt" aria-hidden="true"></i> 專案</span></a>
         </li>
-        <li class="title" (click)="navbarClick(3)" [ngClass]="{'open': flex[3]}">
+        <li class="title" (click)="thisNavbar='con'" [ngClass]="{'open': thisNavbar ==='con'}">
           <a href="#mail" data-toggle="tab"><span><i class="fa fa-envelope-o" aria-hidden="true"></i> 聯絡我</span></a>
         </li>
-        <li class="title" (click)="navbarClick(4)" [ngClass]="{'open': flex[4]}">
+        <li class="title" (click)="thisNavbar='git'" [ngClass]="{'open': thisNavbar ==='git'}">
           <a target="_blank" href="https://github.com/Bear1110"><span><i class="fa fa-github fa-2x" aria-hidden="true"></i></span></a>
         </li>
       </ul>

@@ -21,8 +21,7 @@ export class AppComponent {
   background = ['assets/img/12.jpg', 'assets/img/19.jpg', 'assets/img/1.jpg'];
   now = "url('assets/img/12.jpg')";
   length = 0;
-  flex : boolean [] = [true,false,false,false,false];
-  lastOneClick = 0;
+  thisNavbar = 'bio';
 
   ngOnInit() {
     let timer = Observable.timer(0, 4000);
@@ -38,14 +37,6 @@ export class AppComponent {
       loop: !0, // here
     });
     this.changeBackground();
-  }
-  navbarClick(i){
-    // this.flex.forEach((item, index, theArray) => {
-    //   theArray[index] = false;
-    // });
-    this.flex[this.lastOneClick] = false;
-    this.flex[i] = true;
-    this.lastOneClick = i;
   }
   changeBackground() {
       this.now = "url('" + this.background[this.length] + "')";

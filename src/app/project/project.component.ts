@@ -52,6 +52,13 @@ export class ProjectComponent implements OnInit {
                   <a target='_blank' href='https://bear1110.github.io/demo-website/'>官方網站Link</p>`,
     time: '2015~現在',
     icon: 'fa fa-globe fa-5x'
+  },{
+    title: "Todo List ( Angular 2 http API 套用 )",
+    subTitle: "使用Angular2 所完成的Todo List 並且有連線到 jsonbin.org 串接API",
+    content: `<p>可記錄自己的任何代辦事項 並且任何平台皆適用 有網路即可共享
+    <a target='_blank' href='https://bear1110.github.io/todomvc-angular/'>Github專案Link</a></p>`,
+    time: '2015~現在',
+    icon: 'fa fa-list-ol fa-5x'
   }, {
     title: "中央大學-新生資訊網",
     subTitle: "中央大學每年為了新進學生所架設的新生專屬網站，Laravel 為基礎而完成",

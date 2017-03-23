@@ -8,7 +8,7 @@
       </div>
       <div class="row" style="padding: 1%">
         <div class="col-md-4 text-center">
-          <img src="assets/img/profile.png" class="img-responsive" width="318" height="323" style="box-shadow: 10px 10px 5px #888888;">
+          <img src="assets/img/profile.png" class="img-responsive" width="318" height="323">
         </div>
         <div class="col-md-8">
           <h1><b>熊偉年</b></h1>
@@ -24,11 +24,11 @@
         <li class="title" (click)="thisNavbar='bio'" [ngClass]="{'open': thisNavbar==='bio'}">
           <a class="effect-6" href="#home" data-toggle="tab"><span><i class="fa fa-user" aria-hidden="true"></i> 簡介</span></a>
         </li>
-        <li class="title" (click)="thisNavbar='exp'" [ngClass]="{'open': thisNavbar ==='exp'}">
-          <a href="#profile" data-toggle="tab"><span><i class="fa fa-etsy" aria-hidden="true"></i> 經歷</span></a>
-        </li>
         <li class="title" (click)="thisNavbar='pro'" [ngClass]="{'open': thisNavbar ==='pro'}">
           <a href="#project" data-toggle="tab"><span><i class="fa fa-product-hunt" aria-hidden="true"></i> 專案</span></a>
+        </li>
+        <li class="title" (click)="thisNavbar='exp'" [ngClass]="{'open': thisNavbar ==='exp'}">
+          <a href="#profile" data-toggle="tab"><span><i class="fa fa-etsy" aria-hidden="true"></i> 經歷</span></a>
         </li>
         <li class="title" (click)="thisNavbar='con'" [ngClass]="{'open': thisNavbar ==='con'}">
           <a href="#mail" data-toggle="tab"><span><i class="fa fa-envelope-o" aria-hidden="true"></i> 聯絡我</span></a>

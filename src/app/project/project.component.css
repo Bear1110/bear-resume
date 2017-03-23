@@ -1,4 +1,3 @@
-body,h1,h2,h3,h4,h5,h6,p,span,a {
-    font-family: "Microsoft Jhenghei", sans-serif !important;
-    /*font-family: 'Noto Sans TC', sans-serif;*/
+:host /deep/ .panel-body b{ /*  /deep/ for innerHtml **/
+    color : red;
 }

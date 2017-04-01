@@ -1,27 +1,36 @@
-import {
-  Component,
-  OnInit,
-  AfterViewInit
-} from '@angular/core';
-
-import {
-  Angulartics2GoogleAnalytics
-} from 'angulartics2';
-import {
-  Observable
-} from 'rxjs/Rx';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Angulartics2GoogleAnalytics } from 'angulartics2';
+import { Observable } from 'rxjs/Rx';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css','./navbar-cool.css']
+  styleUrls: ['./app.component.css', './navbar-cool.css']
 })
 export class AppComponent {
-  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
+  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) { }
   skill = ['jQury', 'vue.js', 'Angular2', 'PHP', 'Laravel', 'Java', 'Android', 'CSS'];
   background = ['assets/img/12.jpg', 'assets/img/19.jpg', 'assets/img/1.jpg'];
   now = "url('assets/img/12.jpg')";
   length = 0;
-  thisNavbar = 'bio';
+  nowNavbar = '';
+
+  navBar = [{
+    title: "簡介",
+    icon: "fa-user",
+    link: "intro"
+  }, {
+    title: "專案",
+    icon: "fa-product-hunt",
+    link: "project"
+  }, {
+    title: "經歷",
+    icon: "fa-etsy",
+    link: "experience"
+  }, {
+    title: "聯絡我",
+    icon: "fa-envelope-o",
+    link: "contact"
+  }]
 
   ngOnInit() {
     let timer = Observable.timer(0, 4000);
@@ -39,8 +48,8 @@ export class AppComponent {
     this.changeBackground();
   }
   changeBackground() {
-      this.now = "url('" + this.background[this.length] + "')";
-      (this.background[++this.length]==null)? this.length = 0 : "";
+    this.now = "url('" + this.background[this.length] + "')";
+    (this.background[++this.length] == null) ? this.length = 0 : "";
   }
 
 }

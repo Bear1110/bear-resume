@@ -21,55 +21,15 @@
         </div>
       </div>
       <ul class="nav nav-tabs" style="margin-bottom: 15px;margin-top: 20px; display: flex;">
-        <li class="title" (click)="thisNavbar='bio'" [ngClass]="{'open': thisNavbar==='bio'}">
-          <a class="effect-6" href="#home" data-toggle="tab"><span><i class="fa fa-user" aria-hidden="true"></i> 簡介</span></a>
+        <li *ngFor="let item of navBar" (click)="nowNavbar=item.link" [ngClass]="{'title': true, 'open': nowNavbar===item.link}">
+          <a [routerLink]="[ '/'+item.link]"><span><i [ngClass]="['fa',item.icon]" aria-hidden="true"></i> {{item.title}}</span></a>
         </li>
-        <li class="title" (click)="thisNavbar='pro'" [ngClass]="{'open': thisNavbar ==='pro'}">
-          <a href="#project" data-toggle="tab"><span><i class="fa fa-product-hunt" aria-hidden="true"></i> 專案</span></a>
-        </li>
-        <li class="title" (click)="thisNavbar='exp'" [ngClass]="{'open': thisNavbar ==='exp'}">
-          <a href="#profile" data-toggle="tab"><span><i class="fa fa-etsy" aria-hidden="true"></i> 經歷</span></a>
-        </li>
-        <li class="title" (click)="thisNavbar='con'" [ngClass]="{'open': thisNavbar ==='con'}">
-          <a href="#mail" data-toggle="tab"><span><i class="fa fa-envelope-o" aria-hidden="true"></i> 聯絡我</span></a>
-        </li>
-        <li class="title" (click)="thisNavbar='git'" [ngClass]="{'open': thisNavbar ==='git'}">
+        <li class="title" (click)="nowNavbar='git'" [ngClass]="{'open': nowNavbar ==='git'}">
           <a target="_blank" href="https://github.com/Bear1110"><span><i class="fa fa-github fa-2x" aria-hidden="true"></i></span></a>
         </li>
       </ul>
-      <div id="myTabContent" class="tab-content">
-        <!--*********************************************************************************-->
-        <div class="tab-pane fade active in" id="home">
-          <app-introduction></app-introduction>
-        </div>
-        <!--*********************************************************************************-->
-        <div class="tab-pane fade" id="profile">
-          <app-exp></app-exp>
-        </div>
-        <!--*********************************************************************************-->
-        <div class="tab-pane fade" id="project">
-          <app-project></app-project>
-        </div>
-        <!--*********************************************************************************-->
-        <div class="tab-pane fade" id="mail">
-          <div class="panel panel-default">
-            <div class="panel-body text-center">
-              <a target='_blank' href="mailto:william456821@gmail.com">
-                <h1><i class="fa fa-google" aria-hidden="true"></i>mail</h1>
-              </a>
-              <a target='_blank' href="https://www.facebook.com/profile.php?id=100000256849750">
-                <h1><i class="fa fa-facebook-official" aria-hidden="true"></i>: 熊偉年</h1>
-              </a>
-              <a target="_blank" href="https://tw.linkedin.com/in/偉年-熊-427162132">
-                <h1><i class="fa fa-linkedin-square" aria-hidden="true"></i> Linkedin</h1>
-              </a>
-              <a target="_blank" href="https://github.com/Bear1110">
-                <h1><i class="fa fa-github fa-lg" aria-hidden="true"></i> Github</h1>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--*********************************************************************************-->
+      <div class="tab-content">
+        <router-outlet></router-outlet>
       </div>
       <div class="progress progress-striped active">
         <div class="progress-bar" style="width: 100%"></div>
@@ -80,7 +40,5 @@
 
     </div>
   </div>
-  <router-outlet></router-outlet>
 
 </div>
-    

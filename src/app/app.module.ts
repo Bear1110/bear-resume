@@ -16,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { MockService } from './mock.service';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactComponent } from './contact/contact.component';
     ExpComponent,
     ProjectComponent,
     IntroductionComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

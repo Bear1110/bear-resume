@@ -24,7 +24,7 @@ export class ProjectComponent implements OnInit {
     title: "國立中央大學-問卷系統",
     subTitle: "Laravel 結合 vue.js 來做動態的新增與修改 (包含跳題功能及各種彈性設計)",
     content: `<p>與同學一同並使用 Git 當作版控系統，與同學前後花約一年的時間，從零到有完成此系統</p>
-      <p><b>即時更新、跳題邏輯、問卷防呆</b> 等等 都是使用 Vue.js完成複雜需求 <a target='_blank' href='http://140.115.19.197/QuestionSys/'>問卷系統連結</a></p>`,
+      <p><b>即時更新、跳題邏輯、問卷防呆</b> 等等 都是使用 Vue.js完成複雜需求 <a target='_blank' href='http://questionsys.is.ncu.edu.tw/home'>問卷系統連結</a></p>`,
     time: '2015~現在',
     icon: 'fa fa-quora fa-5x'
   }, {

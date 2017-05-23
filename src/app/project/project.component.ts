@@ -38,11 +38,14 @@ export class ProjectComponent implements OnInit {
     time: '2015~現在',
     icon: 'fa fa-ship fa-5x'
   }, {
-    title: "AR 貪食蛇 ( 大三專題-製作中 )",
+    title: "AR 貪食蛇 ( 大三專題 )",
     subTitle: "想達到人與人外出跑步運動的AR貪食蛇，創意Android 遊戲App",
-    content: `<p>獲得GPS或是陀螺儀的部分</p>
+    content: `<p>以Pokemon GO為發想，運用GPS定位、TCP Server和AR技術，將畫面中的玩家描繪成蛇，進行遊戲。透過玩家的行走，旨在將貪食蛇遊戲融入在日常生活中。
+</p>
                   <p>連線架構( 如玩家的資料型態，TCP protocal協定) 都是由我負責完成。</p>
-                  <p>小地圖的座標繪製等等</p>`,
+                  <p>小地圖的座標繪製等等</p>
+                  <img src="assets/img/slither.png" class="img-responsive" width="200" height="300" >\
+                  <p>此為遊戲示意圖，紅色原點為對方身體，下方灰色區塊為小地圖。</p>`,
     time: '2015~現在',
     icon: 'fa fa-android fa-5x'
   }, {

@@ -28,6 +28,13 @@ export class ProjectComponent implements OnInit {
     time: '2015~現在',
     icon: 'fa fa-quora fa-5x'
   }, {
+    title: "國立中央大學-活動報名系統",
+    subTitle: "Laravel 結合 vue.js 並且使用 socket.io 來達成即時通知的效果",
+    content: `<p>主要負責整個架構的修改，及一些細節部分的優化...等等，</p>
+      <p><b>即時通知</b> 是使用 socket.io 配合 redis 及 Laravel 中的broadcast 系統完成 <a target='_blank' href='http://140.115.19.197/ActivitySys/'>活動報名系統連結</a></p>`,
+    time: '2015~現在',
+    icon: 'fa fa-quora fa-5x'
+  }, {
     title: "戰艦棋 (計算機網路課程實作專案)",
     subTitle: "Java-SocketProgram(TCP/UDP) 程式碼約 1500行 點我可看程式精簡UML圖",
     content: `<p>遊戲流程:先擺好自己的船 之後猜對方的船隻方位。</p>

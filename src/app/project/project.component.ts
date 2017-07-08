@@ -24,7 +24,14 @@ export class ProjectComponent implements OnInit {
     title: "國立中央大學-問卷系統",
     subTitle: "Laravel 結合 vue.js 來做動態的新增與修改 (包含跳題功能及各種彈性設計)",
     content: `<p>與同學一同並使用 Git 當作版控系統，與同學前後花約一年的時間，從零到有完成此系統</p>
-      <p><b>即時更新、跳題邏輯、問卷防呆</b> 等等 都是使用 Vue.js完成複雜需求 <a target='_blank' href='http://140.115.19.197/QuestionSys/'>問卷系統連結</a></p>`,
+      <p><b>即時更新、跳題邏輯、問卷防呆</b> 等等 都是使用 Vue.js完成複雜需求 <a target='_blank' href='http://questionsys.is.ncu.edu.tw/home'>問卷系統連結</a></p>`,
+    time: '2015~現在',
+    icon: 'fa fa-quora fa-5x'
+  }, {
+    title: "國立中央大學-活動報名系統",
+    subTitle: "Laravel 結合 vue.js 並且使用 socket.io 來達成即時通知的效果",
+    content: `<p>主要負責整個架構的修改，及一些細節部分的優化...等等，</p>
+      <p><b>即時通知</b> 是使用 socket.io 配合 redis 及 Laravel 中的broadcast 系統完成 <a target='_blank' href='http://140.115.19.197/ActivitySys/'>活動報名系統連結</a></p>`,
     time: '2015~現在',
     icon: 'fa fa-quora fa-5x'
   }, {
@@ -38,11 +45,14 @@ export class ProjectComponent implements OnInit {
     time: '2015~現在',
     icon: 'fa fa-ship fa-5x'
   }, {
-    title: "AR 貪食蛇 ( 大三專題-製作中 )",
+    title: "AR 貪食蛇 ( 大三專題 )",
     subTitle: "想達到人與人外出跑步運動的AR貪食蛇，創意Android 遊戲App",
-    content: `<p>獲得GPS或是陀螺儀的部分</p>
+    content: `<p>以Pokemon GO為發想，運用GPS定位、TCP Server和AR技術，將畫面中的玩家描繪成蛇，進行遊戲。透過玩家的行走，旨在將貪食蛇遊戲融入在日常生活中。
+</p>
                   <p>連線架構( 如玩家的資料型態，TCP protocal協定) 都是由我負責完成。</p>
-                  <p>小地圖的座標繪製等等</p>`,
+                  <p>小地圖的座標繪製等等</p>
+                  <img src="assets/img/slither.png" class="img-responsive" width="200" height="300" >\
+                  <p>此為遊戲示意圖，紅色原點為對方身體，下方灰色區塊為小地圖。</p>`,
     time: '2015~現在',
     icon: 'fa fa-android fa-5x'
   }, {
@@ -52,11 +62,11 @@ export class ProjectComponent implements OnInit {
                   <a target='_blank' href='https://bear1110.github.io/demo-website/'>官方網站Link</p>`,
     time: '2015~現在',
     icon: 'fa fa-globe fa-5x'
-  },{
+  }, {
     title: "Todo List ( Angular 2 http API 套用 )",
     subTitle: "使用Angular2 所完成的Todo List 並且有連線到 jsonbin.org 串接API",
     content: `<p>可記錄自己的任何代辦事項 並且任何平台皆適用 有網路即可共享
-    <a target='_blank' href='https://bear1110.github.io/todomvc-angular/'>Github專案Link</a></p>`,
+    <a target='_blank' href='https://github.com/Bear1110/todomvc-angular'>Github專案Link</a></p>`,
     time: '2015~現在',
     icon: 'fa fa-list-ol fa-5x'
   }, {
@@ -73,6 +83,6 @@ export class ProjectComponent implements OnInit {
     icon: 'fa fa-terminal fa-5x'
   }]
 
-  constructor() {}
-  ngOnInit() {}
+  constructor() { }
+  ngOnInit() { }
 }

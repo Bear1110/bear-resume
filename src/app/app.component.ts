@@ -45,11 +45,8 @@ export class AppComponent {
       backDelay: 700, // pause before backspacing
       loop: !0, // here
     });
-    this.changeBackground();
   }
   changeBackground() {
-    this.now = "url('" + this.background[this.length] + "')";
-    (this.background[++this.length] == null) ? this.length = 0 : "";
+    this.now = "url('" + this.background[this.length++ % 3] + "')";
   }
-
 }

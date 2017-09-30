@@ -40,8 +40,9 @@ export class ProjectComponent implements OnInit {
     content: `<p>遊戲流程:先擺好自己的船 之後猜對方的船隻方位。</p>
         <p>附有聊天室功能方便溝通互動，與同學協力完成 </p>
       <p>主要負責<b>連線MVC邏輯部分撰寫</b>
+      <a target='_blank' href='https://github.com/Bear1110/Java-SocketProgram'>Github</a></p>
       <img src="assets/img/UML.png" class="img-responsive" width="1241" height="944" >
-      <a target='_blank' href='https://github.com/Bear1110/Java-SocketProgram'>Github</a></p>`,
+      `,
     time: '2015~現在',
     icon: 'fa fa-ship fa-5x'
   }, {

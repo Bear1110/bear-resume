@@ -1,3 +1,8 @@
-:host /deep/ .panel-body b{ /*  /deep/ for innerHtml **/
-    color : red;
+:host /deep/ .panel-body b {
+  /*  /deep/ for innerHtml **/
+  color: red;
+}
+
+.list-group-item:hover {
+  background-color: #ECF5F2
 }

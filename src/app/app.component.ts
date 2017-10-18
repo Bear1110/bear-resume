@@ -8,7 +8,7 @@ import { Observable } from 'rxjs/Rx';
 })
 export class AppComponent {
   constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) { }
-  skill = ['jQury', 'vue.js', 'Angular2', 'PHP', 'Laravel', 'Java', 'Android', 'CSS'];
+  skill = ['jQury', 'vue.js', 'Angular2', 'PHP', 'Laravel', 'Java', 'Android', 'CSS', 'C#', 'C++'];
   background = ['assets/img/12.jpg', 'assets/img/19.jpg', 'assets/img/1.jpg'];
   now = "url('assets/img/12.jpg')";
   length = 0;
@@ -40,9 +40,9 @@ export class AppComponent {
   }
   ngAfterViewInit() {
     $(".text-change").typed({
-      strings: ["web engineer.", "aggressive student.", "Bear."],
+      strings: ["web engineer.", "software engineer.", "aggressive student.", "Bear."],
       typeSpeed: 100, // typing speed
-      backDelay: 700, // pause before backspacing
+      backDelay: 800, // pause before backspacing
       loop: !0, // here
     });
   }

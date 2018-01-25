@@ -4,30 +4,46 @@
       <header class="row" style="padding: 1%">
         <section class="row" style="padding: 1%">
           <div class="text-center col-md-12 topFont">
-            <span>I'm </span><span class="text-change" style=" display: inline;"></span>
+            <span>I'm </span>
+            <span class="text-change" style=" display: inline;"></span>
           </div>
         </section>
         <figure class="col-md-4 text-center">
           <img src="assets/img/profile.png" class="img-responsive" width="318" height="323">
         </figure>
         <section class="col-md-8">
-          <h1><b>熊偉年</b></h1>
-          <h2><b>前後端網頁工程師/軟體工程師</b></h2>
-          <h2><b>中央大學資訊工程學系 (Senior)</b></h2>
+          <h1>
+            <b>熊偉年</b>
+          </h1>
+          <h2>
+            <b>前後端網頁工程師/軟體工程師</b>
+          </h2>
+          <h2>
+            <b>中央大學資訊工程學系 (Senior)</b>
+          </h2>
           <h2>樂於學習各種技術，並盡我所能了解原理</h2>
           <ul class="breadcrumb">
             <li *ngFor="let item of skill">{{item}}</li>
           </ul>
+          <h3>多益成績: 825 ( Listening->455 Reading->370 )</h3>
         </section>
       </header>
       <nav class="nav nav-tabs" style="margin-bottom: 15px;margin-top: 20px; display: flex;">
         <li *ngFor="let item of navBar" (click)="nowNavbar=item.link" [ngClass]="{'title': true, 'open': nowNavbar===item.link}">
-          <a [routerLink]="[ '/'+item.link]"><span><i [ngClass]="['fa',item.icon]" aria-hidden="true"></i> {{item.title}}</span></a>
+          <a [routerLink]="[ '/'+item.link]">
+            <span>
+              <i [ngClass]="['fa',item.icon]" aria-hidden="true"></i> {{item.title}}</span>
+          </a>
         </li>
         <li class="title" (click)="nowNavbar='git'" [ngClass]="{'open': nowNavbar ==='git'}">
-          <a target="_blank" href="https://github.com/Bear1110"><span><i class="fa fa-github fa-2x" aria-hidden="true"></i></span></a>
+          <a target="_blank" href="https://github.com/Bear1110">
+            <span>
+              <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+            </span>
+          </a>
         </li>
       </nav>
+
       <article class="tab-content">
         <router-outlet></router-outlet>
       </article>

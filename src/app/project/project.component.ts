@@ -11,6 +11,15 @@ import {
 export class ProjectComponent implements OnInit {
 
   skill = [{
+    title: "GeekyNote",
+    subTitle: "有版本系統概念來管理文件",
+    content: `<p>本專案是使用 Electron 及 Git 觀念所寫出來的一個文件管理系統。</p><p>目前程式碼普遍都有導入Git的系統，但是文件卻沒有因為程式碼版本的更迭而隨著演進，導致許多文件在經過多個版本之後不知道其有效程度為何。
+    <a target='_blank' href='https://www.youtube.com/watch?v=S4bONiICx-A'><i class="fa fa-youtube-play" aria-hidden="true"></i>Youtube Demo</a> <a target='_blank' href='https://www.youtube.com/watch?v=BXwvDNrsJZs'><i class="fa fa-youtube-play" aria-hidden="true"></i>Intro</a>
+    </p>
+      `,
+    time: '2018~現在',
+    icon: 'fa fa-file fa-5x'
+  },{
     title: "What-does-the-box-say (軟體工程課程團隊專案)",
     subTitle: "遊戲內容為 TCP/UDP 2D地圖連線遊戲，為 7 人合作所完成",
     content: `<p>途中練習使用團隊開發方式</p>

@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { MockServiceService } from './mock-service.service';
+import { MockService } from './mock.service';
 
-describe('MockServiceService', () => {
+describe('MockService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [MockServiceService]
+      providers: [MockService]
     });
   });
 
-  it('should ...', inject([MockServiceService], (service: MockServiceService) => {
+  it('should ...', inject([MockService], (service: MockService) => {
     expect(service).toBeTruthy();
   }));
 });

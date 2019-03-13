@@ -4,7 +4,7 @@ export const EXPS : exp[] = [
     {
       title :"校務資訊系統網頁開發(校內工讀)",
       content : ["主要從事網頁開發，使用 Laravel 框架 去執行Project","並結合 vue.js 來設計前端"],
-      time : '2015/8~現在',
+      time : '2015/8~2017/12',
       icon : 'fa fa-chrome fa-3x'
     },{
       title :"inQ 好奇人工智慧公司(寒假實習生)",
